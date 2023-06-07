@@ -698,7 +698,7 @@
                     <sp-label>查看器</sp-label>
                 </div>
                 <div class="sp-tab" id="sp-control_net-tab">
-                    <sp-label>控制网</sp-label>
+                    <sp-label>ControlNet</sp-label>
                 </div>
                 <div class="sp-tab" id="sp-history-tab" style="display: none">
                     <sp-label>历史生成</sp-label>
@@ -711,7 +711,7 @@
                     id="sp-image_search-tab"
                     style="display: none"
                 >
-                    <sp-label>Image Search</sp-label>
+                    <sp-label>图片检索</sp-label>
                 </div>
 
                 <div
@@ -797,32 +797,32 @@
                             title=""
                             class="rbSubTab"
                             checked
-                            value="viewer"
+                            value="查看器"
                             data-tab-name="sp-viewer-tab"
-                            >Viewer</sp-radio
+                            >查看器</sp-radio
                         >
                         <sp-radio
                             title=""
                             class="rbSubTab"
                             id="rbHistoryTab"
-                            value="history"
+                            value="历史文件"
                             data-tab-name="sp-history-tab"
-                            >History</sp-radio
+                            >历史文件</sp-radio
                         >
                         <sp-radio
                             title=""
                             class="rbSubTab"
                             id="rbImageSearch"
                             data-tab-name="sp-image_search-tab"
-                            value="image_search"
-                            >Image Search</sp-radio
+                            value="图片检索"
+                            >图片检索</sp-radio
                         >
                         <sp-radio
                             title=""
                             class="rbSubTab"
                             id="rbPromptsLibrary"
                             data-tab-name="sp-prompts-library-tab"
-                            value="prompts-library"
+                            value="提示词库"
                             >提示词库</sp-radio
                         >
                         <sp-radio
@@ -830,7 +830,7 @@
                             class="rbSubTab"
                             id="rbLexica"
                             data-tab-name="sp-lexica-tab"
-                            value="lexica"
+                            value="Lexica"
                             >Lexica</sp-radio
                         >
                     </sp-radio-group>
@@ -838,7 +838,7 @@
                 <div id="viewerSubTab">
                     <div class="flexContainer">
                         <sp-label slot="label"
-                            >View your generated images on the canvas</sp-label
+                            >在画布上查看你生成的图片</sp-label
                         >
                     </div>
                     <div></div>
@@ -853,7 +853,7 @@
                             class="btnSquare btnGenerateClass"
                             id="btnGenerate"
                         >
-                            Generate txt2img
+                            运行 文生图
                         </button>
                         <button
                             class="btnSquare btnInterruptClass"
@@ -1254,7 +1254,7 @@
 
                 <div class="flexContainer">
                     <sp-label slot="label"
-                        >history of all the images you generated</sp-label
+                        >较早前生成的历史文件</sp-label
                     >
                     <div id="historySeedLabelContainer">
                         <sp-label slot="label">Seed:</sp-label
@@ -1286,7 +1286,7 @@
                 <!-- <sp-textarea id="lexicaPrompt"> </sp-textarea> -->
                 <div class="flexContainer">
                     <sp-label slot="label"
-                        >Explore Lexica for prompts and inspiration</sp-label
+                        >在Lexica.com浏览提示词或获取灵感</sp-label
                     >
                 </div>
                 <div></div>
@@ -1296,7 +1296,7 @@
                         type="text"
                         placeholder="cute cats"
                         value=""
-                        ><sp-label slot="label">Search:</sp-label></sp-textfield
+                        ><sp-label slot="label">搜索:</sp-label></sp-textfield
                     >
 
                     <button
@@ -1327,7 +1327,7 @@
                 <div class="subTabOptionsContainer"></div>
 
                 <div class="flexContainer">
-                    <sp-label slot="label">Image Search Engine</sp-label>
+                    <sp-label slot="label">图片搜索引擎</sp-label>
                 </div>
                 <div></div>
                 <div>
@@ -1336,11 +1336,11 @@
                         type="text"
                         placeholder="cute cats"
                         value=""
-                        ><sp-label slot="label">Search:</sp-label></sp-textfield
+                        ><sp-label slot="label">图片搜索:</sp-label></sp-textfield
                     >
 
                     <button class="btnSquare" id="btnImageSearch">
-                        Image Search
+                        搜索
                     </button>
                 </div>
                 <div
@@ -1494,7 +1494,7 @@
                         value="20"
                         title="Resize scale of current selection size"
                     >
-                        <sp-label slot="label">缩放倍数</sp-label>
+                        <sp-label slot="label">缩放倍数:</sp-label>
                         <sp-label
                             class="labelNumber"
                             slot="label"
@@ -1552,7 +1552,7 @@
                     style="padding-bottom: 5px"
                 >
                     <sp-label slot="label" class="lProgressLabel"
-                        >No work in progress</sp-label
+                        >进程中暂无生成文件或队列..</sp-label
                     >
                 </div>
                 <div style="padding-bottom: 5px">
@@ -1961,7 +1961,7 @@
                             display: inline-block;
                         "
                     >
-                        Generate txt2img
+                        运行 文生图
                     </button>
                     <!-- <div class="divBtn btnSquare btnGenerateClass">
                             Generate txt2img
@@ -2405,14 +2405,14 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                             class="rbMode"
                             id="rbModeInpaint"
                             value="inpaint"
-                            >inpaint</sp-radio
+                            >局部重绘</sp-radio
                         >
                         <sp-radio
                             title="use this mode to (1) fill any missing area of an image,(2) expand an image"
                             class="rbMode"
                             id="rbOutpaintMode"
                             value="outpaint"
-                            >outpaint</sp-radio
+                            >扩展重绘</sp-radio
                         >
                         <!-- <sp-tooltip id="tool_tip" open placement="top">use this when you want to fill empty areas of the canvas</sp-tooltip> -->
                     </sp-radio-group>
@@ -2509,10 +2509,10 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                         align-items: flex-start;
                                     "
                                 >
-                                    <sp-label>Batch Size:</sp-label
+                                    <sp-label>每批数量:</sp-label
                                     ><sp-textfield
                                         style="width: 100%"
-                                        title="the number of images to generate at once.The larger the number more VRAM stable diffusion will use."
+                                        title="单次生成数量,2代表一次生成2张.数量越多占用显存越高,建议为1."
                                         id="tiNumberOfBatchSize"
                                         type="number"
                                         placeholder="1"
@@ -2528,10 +2528,10 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                         align-items: flex-start;
                                     "
                                 >
-                                    <sp-label>Batch Count:</sp-label
+                                    <sp-label>生成批次:</sp-label
                                     ><sp-textfield
                                         style="width: 100%"
-                                        title="the number of images to generate in queue. The larger the number the longer will take."
+                                        title="批次对应张数,输入2代表生成2次.数量越多,队列越长,计算时间越长"
                                         id="tiNumberOfBatchCount"
                                         type="number"
                                         placeholder="1"
@@ -2549,7 +2549,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                     <sp-label>采样步数:</sp-label
                                     ><sp-textfield
                                         style="width: 100%"
-                                        title="the higher the steps the longer it will take to generate an image"
+                                        title="采样步数越多,细节越丰富,计算次数越多"
                                         id="tiNumberOfSteps"
                                         type="number"
                                         placeholder="20"
@@ -2562,7 +2562,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                     <div id="selectionMode">
                         <div>
                             <sp-label id="rbSelectionModeLabel" slot="label"
-                                >Selection Mode:</sp-label
+                                >选区模式:</sp-label
                             >
                         </div>
 
@@ -2575,19 +2575,19 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                     class="rbSelectionMode"
                                     checked
                                     value="ratio"
-                                    >ratio</sp-radio
+                                    >等比</sp-radio
                                 >
                                 <sp-radio
                                     title="use the selection area width and height to fill the width and height sliders"
                                     class="rbSelectionMode"
                                     value="precise"
-                                    >precise</sp-radio
+                                    >当前选区</sp-radio
                                 >
                                 <sp-radio
                                     title="fill the width and height sliders manually"
                                     class="rbSelectionMode"
                                     value="ignore"
-                                    >ignore</sp-radio
+                                    >手动</sp-radio
                                 >
                             </sp-radio-group>
 
@@ -2616,7 +2616,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                 value="8"
                                 data-old_value="512"
                             >
-                                <sp-label slot="label">Width:</sp-label>
+                                <sp-label slot="label">宽度:</sp-label>
                                 <sp-label
                                     class="labelNumber"
                                     slot="label"
@@ -2638,7 +2638,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                 value="8"
                                 data-old_value="512"
                             >
-                                <sp-label slot="label">Height:</sp-label>
+                                <sp-label slot="label">高度:</sp-label>
                                 <sp-label
                                     class="labelNumber"
                                     slot="label"
@@ -2765,10 +2765,10 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                     >fill</sp-radio
                                 >
                                 <sp-radio class="rbMaskContent" value="1"
-                                    >original</sp-radio
+                                    >原图</sp-radio
                                 >
                                 <sp-radio class="rbMaskContent" value="2"
-                                    >latent noise</sp-radio
+                                    >潜在的噪声</sp-radio
                                 >
                                 <sp-radio class="rbMaskContent" value="3"
                                     >latent nothing</sp-radio
@@ -2781,10 +2781,10 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                 >Inpaint at Full Res</sp-checkbox
                             >
                             <sp-checkbox class="checkbox" id="chRestoreFaces"
-                                >Restore Faces</sp-checkbox
+                                >面部修复</sp-checkbox
                             >
                             <sp-checkbox class="checkbox" id="chHiResFixs"
-                                >Hi Res Fix</sp-checkbox
+                                >高分辨率修复</sp-checkbox
                             >
                         </div>
                         <div id="HiResDiv" style="display: none">
@@ -2924,7 +2924,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                     <div>
                         <!-- <sp-checkbox id="chHiResFixs">Hi Res Fix</sp-checkbox> -->
                         <div style="display: flex">
-                            <sp-label>随机种子:</sp-label
+                            <sp-label>Seed:</sp-label
                             ><sp-textfield
                                 id="tiSeed"
                                 placeholder="Seed"
@@ -2935,7 +2935,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                 id="btnRandomSeed"
                                 style="margin-right: 3px; margin-left: 3px"
                             >
-                                重置为随机
+                                随机
                             </button>
                             <button class="btnSquare" id="btnLastSeed">
                                 上次使用
