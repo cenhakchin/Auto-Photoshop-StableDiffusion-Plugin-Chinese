@@ -7,7 +7,7 @@ Photoshop-StableDiffusion-Plugin的汉化版本
 
 说明
 
-此项目为Photoshop-StableDiffusion-Plugin简体中文扩展
+此项目为Photoshop-StableDiffusion-Plugin简体中文扩展，官方文件汉化。所有版权归[@AbdullahAlfaraj](https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin)所有
 
 当前版本为0606，即基于Adobe官方的Photoshop 2023【24.0.0】版本和A1111最新的本地化模板，于6月7日之前的最新版本进行的汉化。
 
