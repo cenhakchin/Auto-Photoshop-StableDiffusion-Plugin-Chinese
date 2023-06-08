@@ -13,10 +13,13 @@ Photoshop-StableDiffusion-Plugin的汉化版本
 
 时间有限不可能每个功能都体验过，然后根据具体功能对照翻译，有翻译疑问或者更好的建议可联系我
 
+
 📢近期反馈，部分用户说找不到..\Plug-ins\Auto.Photoshop.SD.plugin_v1.2.5\..路径,先确认下自己安装了@AbdullahAlfaraj的插件了没：
 
 1.先移安装[点我下载.zip](https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin/releases/download/v1.2.5/Auto.Photoshop.SD.plugin_v1.2.5.zip);
+
 2.解压到文件夹整个复制到"C:\\Program Files\Adobe\Adobe Photoshop 2023\Plug-ins\"里;
+
 3.再执行以下步骤的安装
 
 
